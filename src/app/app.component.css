@@ -1,35 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 .app-container {
   display: flex;
   min-height: 100vh;
+  width: 100%;
 }
 
 .sidebar {
   width: 250px;
+  min-width: 250px;
   background: #2c3e50;
   color: white;
-  padding: 20px 0;
-  overflow-y: auto;
   height: 100vh;
   position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .sidebar-header {
-  padding: 0 20px;
-  margin-bottom: 20px;
+  padding: 20px;
+  background: #243342;
 }
 
 .sidebar-header h3 {
   color: #ecf0f1;
   margin: 0;
-  padding: 10px 0;
+  padding: 0;
   font-size: 24px;
+  font-weight: 500;
   border-bottom: 2px solid #3498db;
+  padding-bottom: 10px;
 }
 
 .nav-links {
   list-style: none;
   padding: 0;
   margin: 0;
+  overflow-y: auto;
+  flex-grow: 1;
+  scrollbar-width: thin;
+  scrollbar-color: #3498db #2c3e50;
+}
+
+/* For Webkit browsers like Chrome/Safari */
+.nav-links::-webkit-scrollbar {
+  width: 6px;
+}
+
+.nav-links::-webkit-scrollbar-track {
+  background: #2c3e50;
+}
+
+.nav-links::-webkit-scrollbar-thumb {
+  background-color: #3498db;
+  border-radius: 3px;
 }
 
 .nav-links li {
@@ -42,6 +76,7 @@
   color: #ecf0f1;
   text-decoration: none;
   transition: all 0.3s ease;
+  font-size: 15px;
 }
 
 .nav-links a:hover {
@@ -56,8 +91,17 @@
 
 .main-content {
   flex: 1;
-  padding: 20px;
+  padding: 30px;
   margin-left: 250px;
   background: #f5f6fa;
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.main-content > * {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }

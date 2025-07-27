@@ -14,7 +14,6 @@ export class AppComponent {
   title = 'Css';
   
   navItems: NavItem[] = [
-    { path: '/santa', label: 'Santa 3D Card' },
     { path: '/card3', label: 'Animated Cards' },
     { path: '/bookmark', label: 'Bookmark' },
     { path: '/cards', label: 'Dynamic Cards' },
