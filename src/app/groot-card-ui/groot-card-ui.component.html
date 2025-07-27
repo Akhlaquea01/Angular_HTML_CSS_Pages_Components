@@ -3,12 +3,10 @@
     <div class="shape-1"></div>
     <div class="shape-2"></div>
     <div class="card">
-        <img src="assets/image.png" alt="groot-img">
+        <img [src]="imageUrl" [alt]="title">
         <div class="text-container">
-            <h2>GROOT</h2>
-            <p>
-                This tree-like being branched out of his comfort zone to help the Guardians of the Galaxy keep the people of the universe safe.
-            </p>
+            <h2>{{title}}</h2>
+            <p>{{description}}</p>
         </div>
     </div>
   </div>
