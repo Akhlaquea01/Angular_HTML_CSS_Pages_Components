@@ -5,8 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { Santa3dCardComponent } from './santa3d-card/santa3d-card.component';
-import { WeatherCardComponent } from './weather-card/weather-card.component';
-import { AuroraUiComponent } from './aurora-ui/aurora-ui.component';
 import { BookmarkComponent } from './bookmark/bookmark.component';
 import { CardsDynamicComponent } from './cards-dynamic/cards-dynamic.component';
 import { GoldenPageComponent } from './golden-page/golden-page.component';
@@ -27,7 +25,6 @@ import { Loader3Component } from './loader3/loader3.component';
 import { SwitchOmletComponent } from './switch-omlet/switch-omlet.component';
 import { CardsAnimatedComponent } from './cards-animated/cards-animated.component';
 import { SpinnerComponent } from './spinner/spinner.component';
-import { PulseComponent } from './pulse/pulse.component';
 import { QuotesCardComponent } from './quotes-card/quotes-card.component';
 import { RadioCardComponent } from './radio-card/radio-card.component';
 
@@ -36,8 +33,6 @@ import { RadioCardComponent } from './radio-card/radio-card.component';
     AppComponent,
     NavbarComponent,
     Santa3dCardComponent,
-    WeatherCardComponent,
-    AuroraUiComponent,
     BookmarkComponent,
     CardsDynamicComponent,
     GoldenPageComponent,
@@ -58,7 +53,6 @@ import { RadioCardComponent } from './radio-card/radio-card.component';
     SwitchOmletComponent,
     CardsAnimatedComponent,
     SpinnerComponent,
-    PulseComponent,
     QuotesCardComponent,
     RadioCardComponent
   ],

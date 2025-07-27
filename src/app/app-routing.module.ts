@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AuroraUiComponent } from './aurora-ui/aurora-ui.component';
 import { BookmarkComponent } from './bookmark/bookmark.component';
 import { ButtonComponent } from './button/button.component';
 import { CardsAnimatedComponent } from './cards-animated/cards-animated.component';
@@ -16,7 +15,6 @@ import { ImageComponent } from './image/image.component';
 import { LoaderComponent } from './loader/loader.component';
 import { Loader2Component } from './loader2/loader2.component';
 import { Loader3Component } from './loader3/loader3.component';
-import { PulseComponent } from './pulse/pulse.component';
 import { QuotesCardComponent } from './quotes-card/quotes-card.component';
 import { RadioCardComponent } from './radio-card/radio-card.component';
 import { Santa3dCardComponent } from './santa3d-card/santa3d-card.component';
@@ -25,13 +23,10 @@ import { SwitchOmletComponent } from './switch-omlet/switch-omlet.component';
 import { SwitchComponent } from './switch/switch.component';
 import { TextStyleComponent } from './text-style/text-style.component';
 import { TransCardUiComponent } from './trans-card-ui/trans-card-ui.component';
-import { WeatherCardComponent } from './weather-card/weather-card.component';
 
 const routes: Routes = [
   {path:'santa' , component:Santa3dCardComponent },
-  {path:'card' , component:WeatherCardComponent },
   {path:'card3' , component:CardsAnimatedComponent },
-  {path:'aurora' , component:AuroraUiComponent },
   {path:'bookmark' , component:BookmarkComponent },
   {path:'cards' , component: CardsDynamicComponent},
   {path:'golden' , component: GoldenPageComponent},
@@ -51,7 +46,6 @@ const routes: Routes = [
   {path:'loader2' , component: Loader2Component},
   {path:'loader3' , component: Loader3Component},
   {path:'spinner' , component: SpinnerComponent},
-  {path:'pulse' , component: PulseComponent},
   {path:'quotes' , component: QuotesCardComponent},
   {path:'radio' , component: RadioCardComponent},
 ];

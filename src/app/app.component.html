@@ -1,5 +1,15 @@
-<app-navbar></app-navbar>
-<hr>
-<div style="margin-top: 10rem;" class="container-fluid">
-<router-outlet></router-outlet>
+<div class="app-container">
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h3>Components</h3>
+    </div>
+    <ul class="nav-links">
+      <li *ngFor="let item of navItems">
+        <a [routerLink]="item.path" routerLinkActive="active">{{ item.label }}</a>
+      </li>
+    </ul>
+  </nav>
+  <main class="main-content">
+    <router-outlet></router-outlet>
+  </main>
 </div>
