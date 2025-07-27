@@ -18,13 +18,11 @@ import { SpinnerComponent } from './spinner/spinner.component';
 import { SwitchOmletComponent } from './switch-omlet/switch-omlet.component';
 import { SwitchComponent } from './switch/switch.component';
 import { TextStyleComponent } from './text-style/text-style.component';
-import { TransCardUiComponent } from './trans-card-ui/trans-card-ui.component';
 
 const routes: Routes = [
   {path:'card3' , component:CardsAnimatedComponent },
   {path:'cards' , component: CardsDynamicComponent},
   {path:'expand' , component: ExpandingMenuComponent},
-  {path:'transparent' , component: TransCardUiComponent},
   {path:'groot' , component: GrootCardUiComponent},
   {path:'clock' , component: ClockuiComponent},
   {path:'form' , component: GlassFormComponent},
