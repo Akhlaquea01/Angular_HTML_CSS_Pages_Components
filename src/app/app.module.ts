@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CardsDynamicComponent } from './cards-dynamic/cards-dynamic.component';
 import { ExpandingMenuComponent } from './expanding-menu/expanding-menu.component';
-import { ButtonComponent } from './button/button.component';
 import { TransCardUiComponent } from './trans-card-ui/trans-card-ui.component';
 import { GrootCardUiComponent } from './groot-card-ui/groot-card-ui.component';
 import { ClockuiComponent } from './clockui/clockui.component';
@@ -29,7 +28,6 @@ import { RadioCardComponent } from './radio-card/radio-card.component';
     AppComponent,
     CardsDynamicComponent,
     ExpandingMenuComponent,
-    ButtonComponent,
     TransCardUiComponent,
     GrootCardUiComponent,
     ClockuiComponent,

@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ButtonComponent } from './button/button.component';
 import { CardsAnimatedComponent } from './cards-animated/cards-animated.component';
 import { CardsDynamicComponent } from './cards-dynamic/cards-dynamic.component';
 import { ClockuiComponent } from './clockui/clockui.component';
@@ -25,7 +24,6 @@ const routes: Routes = [
   {path:'card3' , component:CardsAnimatedComponent },
   {path:'cards' , component: CardsDynamicComponent},
   {path:'expand' , component: ExpandingMenuComponent},
-  {path:'button' , component: ButtonComponent},
   {path:'transparent' , component: TransCardUiComponent},
   {path:'groot' , component: GrootCardUiComponent},
   {path:'clock' , component: ClockuiComponent},

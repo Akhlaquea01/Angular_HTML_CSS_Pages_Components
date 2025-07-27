@@ -17,7 +17,6 @@ export class AppComponent {
     { path: '/card3', label: 'Animated Cards' },
     { path: '/cards', label: 'Dynamic Cards' },
     { path: '/expand', label: 'Expanding Menu' },
-    { path: '/button', label: 'Button' },
     { path: '/transparent', label: 'Transparent Card' },
     { path: '/groot', label: 'Groot Card' },
     { path: '/clock', label: 'Clock UI' },
