@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BookmarkComponent } from './bookmark/bookmark.component';
 import { CardsDynamicComponent } from './cards-dynamic/cards-dynamic.component';
 import { GoldenPageComponent } from './golden-page/golden-page.component';
 import { ExpandingMenuComponent } from './expanding-menu/expanding-menu.component';
@@ -29,7 +28,6 @@ import { RadioCardComponent } from './radio-card/radio-card.component';
 @NgModule({
   declarations: [
     AppComponent,
-    BookmarkComponent,
     CardsDynamicComponent,
     GoldenPageComponent,
     ExpandingMenuComponent,

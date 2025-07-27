@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { BookmarkComponent } from './bookmark/bookmark.component';
 import { ButtonComponent } from './button/button.component';
 import { CardsAnimatedComponent } from './cards-animated/cards-animated.component';
 import { CardsDynamicComponent } from './cards-dynamic/cards-dynamic.component';
@@ -25,7 +24,6 @@ import { TransCardUiComponent } from './trans-card-ui/trans-card-ui.component';
 
 const routes: Routes = [
   {path:'card3' , component:CardsAnimatedComponent },
-  {path:'bookmark' , component:BookmarkComponent },
   {path:'cards' , component: CardsDynamicComponent},
   {path:'golden' , component: GoldenPageComponent},
   {path:'expand' , component: ExpandingMenuComponent},
