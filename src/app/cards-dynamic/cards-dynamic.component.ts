@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-cards-dynamic',
@@ -6,44 +6,41 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cards-dynamic.component.css']
 })
 export class CardsDynamicComponent implements OnInit {
- theme=document.querySelector(':root');
+  @Input() name: string = 'Akhlaque Ahmad';
+  @Input() title: string = 'Senior Software Engineer';
+  @Input() followers: number = 1600;
+  @Input() following: number = 852;
+  @Input() imageUrl: string = 'assets/MyPic.jpg';
+
+  themeColors = [
+    { id: 'btn1', color: '#3498db', label: 'Blue' },
+    { id: 'btn2', color: '#ff1756', label: 'Red' },
+    { id: 'btn3', color: '#1cb65d', label: 'Green' },
+    { id: 'btn4', color: '#8e44ad', label: 'Purple' },
+    { id: 'btn5', color: '#f4b932', label: 'Yellow' }
+  ];
+
+  activeColor: string = this.themeColors[1].color; // default to red
+  isFollowing: boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
+    document.documentElement.style.setProperty('--theme-color', this.activeColor);
   }
-change(){
-console.log("Firoz");
 
-// this.theme.style.setProperty("--theme-color", "#3498db");
+  changeColor(color: string): void {
+    this.activeColor = color;
+    document.documentElement.style.setProperty('--theme-color', color);
+  }
+
+  toggleFollow(): void {
+    this.isFollowing = !this.isFollowing;
+  }
+
+  onMessage(): void {
+    console.log('Message button clicked');
+    // Add your message functionality here
+  }
 }
-}
 
-
-// <script>
-// const theme = document.querySelector(':root');
-// const btns = document.querySelectorAll('.btn');
-
-// btns.forEach(function(btn){
-
-//     btn.addEventListener("click", function(e){
-
-//         const color = e.currentTarget.classList;
-
-//         if(color.contains("btn1")){
-//             theme.style.setProperty("--theme-color", "#3498db");
-//         }
-//         else if(color.contains("btn2")){
-//             theme.style.setProperty("--theme-color", "#ff1756");
-//         }
-//         else if(color.contains("btn3")){
-//             theme.style.setProperty("--theme-color", "#1cb65d");
-//         }
-//         else if(color.contains("btn4")){
-//             theme.style.setProperty("--theme-color", "#8e44ad");
-//         }
-//         else{
-//             theme.style.setProperty("--theme-color", "#f4b932");
-//         }
-//     });
-// });
-// </script>

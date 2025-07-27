@@ -1,29 +1,32 @@
 <div class="container1">
   <div class="card">
-      <img src="assets/profile_img.jpg" alt="profile_img">
-      <h4>Emily Fisher</h4>
-      <h5>Senior Web Developer</h5>
+      <img [src]="imageUrl" alt="profile_img">
+      <h4>{{name}}</h4>
+      <h5>{{title}}</h5>
       <div class="details">
           <div class="column">
-              <h2>1.6K</h2>
+              <h2>{{followers | number}}</h2>
               <span>Followers</span>
           </div>
           <div class="column">
-              <h2>852</h2>
+              <h2>{{following | number}}</h2>
               <span>Following</span>
           </div>
       </div>
       <div class="buttons">
-          <button>Follow</button>
-          <button>Message</button>
+          <button (click)="toggleFollow()">
+            {{ isFollowing ? 'Following' : 'Follow' }}
+          </button>
+          <button (click)="onMessage()">Message</button>
       </div>
   </div>
   <div class="themes">
-      <button (click)='change()' class="btn btn1"></button>
-      <button class="btn btn2"></button>
-      <button class="btn btn3"></button>
-      <button class="btn btn4"></button>
-      <button class="btn btn5"></button>
+      <button *ngFor="let theme of themeColors"
+              (click)="changeColor(theme.color)"
+              [class]="'btn ' + theme.id"
+              [class.active]="activeColor === theme.color"
+              [attr.aria-label]="'Change theme to ' + theme.label">
+      </button>
   </div>
 </div>
 
