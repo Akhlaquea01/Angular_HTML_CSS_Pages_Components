@@ -7,7 +7,6 @@ import { ClockuiComponent } from './clockui/clockui.component';
 import { ExpandingMenuComponent } from './expanding-menu/expanding-menu.component';
 import { FormWhiteComponent } from './form-white/form-white.component';
 import { GlassFormComponent } from './glass-form/glass-form.component';
-import { GoldenPageComponent } from './golden-page/golden-page.component';
 import { GridCardsComponent } from './grid-cards/grid-cards.component';
 import { GrootCardUiComponent } from './groot-card-ui/groot-card-ui.component';
 import { ImageComponent } from './image/image.component';
@@ -25,7 +24,6 @@ import { TransCardUiComponent } from './trans-card-ui/trans-card-ui.component';
 const routes: Routes = [
   {path:'card3' , component:CardsAnimatedComponent },
   {path:'cards' , component: CardsDynamicComponent},
-  {path:'golden' , component: GoldenPageComponent},
   {path:'expand' , component: ExpandingMenuComponent},
   {path:'button' , component: ButtonComponent},
   {path:'transparent' , component: TransCardUiComponent},

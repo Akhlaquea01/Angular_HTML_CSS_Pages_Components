@@ -16,7 +16,6 @@ export class AppComponent {
   navItems: NavItem[] = [
     { path: '/card3', label: 'Animated Cards' },
     { path: '/cards', label: 'Dynamic Cards' },
-    { path: '/golden', label: 'Golden Page' },
     { path: '/expand', label: 'Expanding Menu' },
     { path: '/button', label: 'Button' },
     { path: '/transparent', label: 'Transparent Card' },

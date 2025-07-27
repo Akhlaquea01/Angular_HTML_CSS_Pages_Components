@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CardsDynamicComponent } from './cards-dynamic/cards-dynamic.component';
-import { GoldenPageComponent } from './golden-page/golden-page.component';
 import { ExpandingMenuComponent } from './expanding-menu/expanding-menu.component';
 import { ButtonComponent } from './button/button.component';
 import { TransCardUiComponent } from './trans-card-ui/trans-card-ui.component';
@@ -29,7 +28,6 @@ import { RadioCardComponent } from './radio-card/radio-card.component';
   declarations: [
     AppComponent,
     CardsDynamicComponent,
-    GoldenPageComponent,
     ExpandingMenuComponent,
     ButtonComponent,
     TransCardUiComponent,
